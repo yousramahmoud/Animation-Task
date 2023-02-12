@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section {
+    width: 1200px;;
+    height: 700px;
+
+}
+.parent {
+    position: relative;
+}
+.div1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../Images/cup1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    0% {left: 0;}
+    100% {left: 1200px; } 
+}
+.div2 {
+    right: 0;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../Images/cup2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s; 
+    animation-delay: 3s;
+    animation-fill-mode: forwards; 
+    animation-direction: reverse;
+}
+@keyframes move {
+   0% {left : 0; }
+   100% { right: 0; left:1200px;}
+}
+    
+
+.div3 {
+    margin-top: 200px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../Images/cup3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    0% {left: 1200px;}
+    100% {left: 0;}
+}
+.div4 {
+    right: 0;
+    margin-top: 300px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../Images/cup4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+@keyframes move {
+    0% {left: 0;  right: 0;}
+   100% {left: 1200px;}
+}
+.div5 {
+    margin-top: 400px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../Images/cup5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    0% {left: 0;}
+   100% {left: 1200px;}
+}
+.div6 {
+   right: 0;
+    margin-top: 500px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../Images/cup6.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+@keyframes move {
+    0% {left: 0; right: 0;} 
+  100% {left: 1200px;}
+}
+.div1:hover {
+    animation-play-state: paused;
+}
+.div2:hover {
+    animation-play-state: paused;
+}
+.div3:hover {
+    animation-play-state: paused;
+}
+.div4:hover {
+    animation-play-state: paused;
+}
+.div5:hover {
+    animation-play-state: paused;
+}
+.div6:hover {
+    animation-play-state: paused;
+}
